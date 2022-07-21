@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="main">
+        <form action="" name="Calculator"> <!-- FORM em HTML é para a criação de um FORMULARIO-->
+            <input type="text" class="text maincolor" name="text1" disabled > <!-- Parte do resultado da calculadora => Input do tipo TEXTO desabilitado-->
+            <input type="text" class="text1 maincolor" name="text12" value="C" onclick="location.reload()"><br> <!-- Botão C => Input do tipo TEXTO, com evento ONCLICK para RECARREGAR-->
+
+            <input type="button" class="num maincolor" name="btn9" value="9" onclick="displaynum(btn9.value)">  <!-- Botão numero =>Input do tipo BUTTON, com evento ONCLICK para carregar o valor do NUMERO-->
+            <input type="button" class="num maincolor" name="btn8" value="8" onclick="displaynum(btn8.value)">  <!-- Botão numero =>Input do tipo BUTTON, com evento ONCLICK para carregar o valor do NUMERO-->
+            <input type="button" class="num maincolor" name="btn7" value="7" onclick="displaynum(btn7.value)">  <!-- Botão numero =>Input do tipo BUTTON, com evento ONCLICK para carregar o valor do NUMERO-->
+            <input type="button" class="num azul" name="addbtn" value="+" onclick="displaynum(addbtn.value)"><br><!--Botão de MAIS =>Input do tipo BUTTON, com evento ONCLICK para realizar a SOMA-->
+
+            <input type="button" class="num maincolor" name="btn6" value="6" onclick="displaynum(btn6.value)">  <!-- Botão numero =>Input do tipo BUTTON, com evento ONCLICK para carregar o valor do NUMERO-->
+            <input type="button" class="num maincolor" name="btn5" value="5" onclick="displaynum(btn5.value)">  <!-- Botão numero =>Input do tipo BUTTON, com evento ONCLICK para carregar o valor do NUMERO-->
+            <input type="button" class="num maincolor" name="btn4" value="4" onclick="displaynum(btn4.value)">  <!-- Botão numero =>Input do tipo BUTTON, com evento ONCLICK para carregar o valor do NUMERO-->
+            <input type="button" class="num bordo" name="subbtn" value="-" onclick="displaynum(subbtn.value)"><br><!--Botão de MENOS =>Input do tipo BUTTON, com evento ONCLICK para realizar a SUBTRAÇÃO-->
+
+            <input type="button" class="num maincolor" name="btn3" value="3" onclick="displaynum(btn3.value)">  <!-- Botão numero =>Input do tipo BUTTON, com evento ONCLICK para carregar o valor do NUMERO-->
+            <input type="button" class="num maincolor" name="btn2" value="2" onclick="displaynum(btn2.value)">  <!-- Botão numero =>Input do tipo BUTTON, com evento ONCLICK para carregar o valor do NUMERO-->
+            <input type="button" class="num maincolor" name="btn1" value="1" onclick="displaynum(btn1.value)">  <!-- Botão numero =>Input do tipo BUTTON, com evento ONCLICK para carregar o valor do NUMERO-->
+            <input type="button" class="num verde" name="mulbtn" value="*" onclick="displaynum(mulbtn.value)"><br><!--Botão de VEZES =>Input do tipo BUTTON, com evento ONCLICK para realizar a MULTIPLICAÇÃO-->
+
+            <input type="button" class="num maincolor" name="dot" value="." onclick="displaynum(dot.value)"><!-- Botão de PONTO =>Input do tipo BUTTON, com evento ONCLICK para acrescentar o PONTO-->
+            <input type="button" class="num maincolor" name="btn0" value="0" onclick="displaynum(btn0.value)">  <!-- Botão numero =>Input do tipo BUTTON, com evento ONCLICK para carregar o valor do NUMERO-->
+            <input type="button" class="num bege" name="eqlbtn" value="=" onclick="text1.value=eval(text1.value)"><!--Botão de IGUAL =>Input do tipo BUTTON, com evento ONCLICK para verificar o RESULTADO da equação-->
+            <input type="button" class="num laranja" name="divbtn" value="/" onclick="displaynum(divbtn.value)"><br><!--Botão de DIVISÃO =>Input do tipo BUTTON, com evento ONCLICK para realizar a DIVISÃO-->
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
